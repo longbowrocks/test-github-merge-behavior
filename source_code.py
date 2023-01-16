@@ -1,7 +1,7 @@
 
 
 def generic_code():
-    print("Hello World!")
+    print("Hello World! Tambien hola mundo en espanol.")
 
 
 def version_specific_code():
