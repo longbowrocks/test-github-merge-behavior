@@ -1,11 +1,11 @@
 
 
 def generic_code():
-    print("Hello World!")
+    print("Hello World! Tambien hola mundo en espanol.")
 
 
 def version_specific_code():
-    print("I am version 1")
+    print("I am version 2")
 
 
 def main():
