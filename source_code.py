@@ -7,6 +7,7 @@ def generic_code():
 
 def version_specific_code():
     print("I am version 2")
+    print("Version 2 requires a custom SSL certfile to make its API calls consistent with other versions."
 
 
 def main():
