@@ -15,6 +15,7 @@ $> vim source_code.py
 $> git commit -am "update to version 2"
 $> vim source_code.py
 $> git commit -am "bugfix"
+$> git push
 ```
 
 Ran the above commands, then created a PR to merge changes from `main` into `product_version_1`.
@@ -32,6 +33,27 @@ Final flow definition:
 This is essentially the next case, but involves a shortcut in making `main` synonymous with `product_version_latest`.
 
 ### Latest is trunk, each version also has a branch (including trunk version)
+
+```
+$> git checkout -b product_version_1
+$> git push
+$> git checkout main
+$> vim source_code.py
+$> git commit -am "update to version 2"
+$> git checkout -b product_version_2
+$> git push
+$> git checkout main
+$> vim source_code.py
+$> git commit -am "global feature"
+$> git push
+$> git checkout -b merge_to_v1
+$> git push
+$> git checkout main
+$> git checkout -b merge_to_v2
+$> git push
+```
+
+Ran the above commands, then created a PR to merge changes from `main` into `product_version_1` and a PR to merge changes from `main` into `product_version_2`.
 
 Final flow definition:
 * All product versions have long-lived branches.
