@@ -10,7 +10,6 @@ def generic_code():
 
 def version_specific_code():
     print("I am version 2")
-    print("Change specific to version 2")
 
 
 def main():
