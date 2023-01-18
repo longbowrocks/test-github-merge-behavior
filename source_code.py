@@ -1,7 +1,4 @@
 
-def more_version_specific_code():
-    print("More version 2")
-
 
 def generic_code():
     print("Hello World!")
@@ -15,7 +12,6 @@ def version_specific_code():
 def main():
     generic_code()
     version_specific_code()
-    more_version_specific_code()
 
 
 if __name__ == "__main__":
