@@ -1,6 +1,12 @@
 # test-github-merge-behavior
 GitHub PR diffs are based on common ancestor, not line-by-line diff.
 
+What makes for a good branching strategy?
+
+* It's easy to answer "what is deployed?". If you know the version of your application in an environment, you can easily browse the code for that version in github.
+* Main branch stays "up to date". Github search only indexes trunk. If you don't want to host your own search, make sure all (or nearly all) features go through main.
+* It's easy to merge new features from main into each maintained version of your application.
+
 This repo will allow me to experiment and find the most maintainable way to have two long-lived branches share *some* changes.
 
 My test cases are below.
